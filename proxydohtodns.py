@@ -18,7 +18,7 @@ def bin(n):
     """
     digs = []
     s = None
-    if n < 0 
+    if n < 0:
         s = '-'
         n = abs(n)
 
