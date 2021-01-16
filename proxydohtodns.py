@@ -17,16 +17,15 @@ def bin(n):
         str: la représentation du nombre n en base 2 
     """
     digs = []
-    s = ''
-    if n < 0:
+    s = None
+    if n < 0 
         s = '-'
-        n = -n
+        n = abs(n)
 
-    while True:
+    while n != 0:
         digs.append(str(n % 2))
         n /= 2
-        if not n:
-            break
+
     if s:
         digs.append(s)
     digs.reverse()
